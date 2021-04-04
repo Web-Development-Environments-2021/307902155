@@ -1,7 +1,286 @@
-#menu
-{
-	position: fixed;
+/* Add a black background color to the top navigation */
+.topnav  {
+	background-color: #333;
+	overflow: hidden;
+	font-family: 'Ranchers', cursive;
+  	position: fixed;
+	top: 0;
 	width: 100%;
-	height: 35px;
-	background: white;
+	border: 0px solid rgb(7, 7, 7);
+	z-index: 2;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	transition: top 0.3s;
+	display: flex;
+	left: 0;
+	margin:0px;
+	padding: 10px;
 }
+
+    /* Style the links inside the navigation bar */
+	.topnav a {
+		color: #f2f2f2;
+		text-decoration: none;
+		position: relative;
+		list-style: none;
+		display: flex;
+		display: block;
+		float: left;
+		font-size: 1.9vw;
+		font-weight: 100;
+		width: 100%;
+
+	}
+	
+	.topnav b {
+		float: right;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 0px 0px;
+		text-decoration: none;
+		font-size: 18px;
+		display: flex;
+	}
+
+
+body {
+	position: center;
+	background-image: url('photo/pexels-jana-kukebal-6496462.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: lightskyblue;
+	display: flex;
+
+  }
+
+.Photos{
+	margin-top: -35px;
+}
+
+.Tzipi{
+	margin-top: 200px;
+}
+
+.lines{
+	position: relative;
+	height: 45px;
+	width: 100%;
+	margin-top: 100px;
+}
+
+.lines::after ,.lines::before{
+	content: '';
+	position: absolute;
+	margin: auto;
+	height: 2px;
+	background: black;
+	width: 45%;
+	top: 45%;
+	z-index:-1 ;
+
+}
+.lines::after{
+	left: 0;
+	z-index:-1 ;
+	
+}
+.lines::before{
+	right: 0;
+	z-index:-1 ;
+}
+
+
+.section {
+	position: relative;
+	text-align: center;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	width: 100%;
+	height: 100px;
+	margin-top: 100px;
+}
+
+.centered {
+	color: rgb(0, 0, 0);
+	margin-top: 15px;
+	margin-left: -15px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Ranchers', cursive;
+	font-size: 20px
+	
+  }
+
+  .answer{
+	font-family: 'Open Sans', sans-serif;
+	color: rgb(10, 10, 10);
+	font-size: 15px;
+	width:100%;
+	direction: rtl;
+	float: right;
+	border: 1px solid black;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+
+th, td {
+	border: 1px solid black;
+	padding: 15px;	
+}
+
+tr:hover {
+	background-color: #e6e6e67e;
+}
+body,
+#slider,
+.wrap,
+
+
+.slide-content {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 70vh;
+  overflow-x: hidden;
+}
+
+.wrap {
+
+  position: relative;
+  z-index: 0;
+}
+
+.slide {
+
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide1 {
+  background-image: url("photo/3.jpg");
+}
+.slide2 {
+  background-image: url("photo/2.jpg");
+}
+.slide3 {
+  background-image: url("photo/1.jpg");
+}
+.slide4 {
+	background-image: url("photo/4.jpg");
+  }
+
+.slide-content {
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-content span {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+
+#arrow-left {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent rgb(0, 0, 0) transparent transparent;
+  left: 0;
+  margin-left: 30px;
+}
+
+#arrow-right {
+  border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent rgb(0, 0, 0);
+  right: 0;
+  margin-right: 30px;
+}
+.youtube{
+	margin-top: 50px;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-areas:
+	  'header header header'
+	  'menu main main'
+	  'menu footer footer ';
+	grid-gap: 10px;
+	width: 100%;
+	padding: 10px;
+  }
+  
+  .grid-container > div {
+	text-align: center;
+	padding: 20px 0;
+	font-size: 18px;
+  }
+
+  .item2{
+	font-family: 'Ranchers', cursive;
+	font-size: 18px;
+	float: left;
+	color: rgb(10, 10, 10);
+  }
+ 
+  .item3{
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 150px;
+	color: rgb(10, 10, 10);
+	font-size: 18px;
+  }
+
+
+  .item1{
+	font-family: 'Ranchers', cursive;
+	font-size: 18px;
+	overflow: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+  }
+  .a {
+
+	color: rgb(10, 10, 10);
+	text-align: center;
+	text-decoration: none;
+	font-size: 30px;
+}
+.text{
+	font-family: 'Open Sans', sans-serif;
+	color: rgb(10, 10, 10);
+	font-size: 16px;
+
+}
+
+.H{
+	text-align: right;
+	font-family: 'Open Sans', sans-serif;
+	color: rgb(10, 10, 10);
+	font-size: 14px;
+	margin-top: 100px;
+	
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+  }
